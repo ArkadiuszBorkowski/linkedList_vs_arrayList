@@ -5,7 +5,8 @@ import java.util.List;
 
 public class ListExample {
     public static void main(String[] args) {
-/*        double[] numbers = new double[3];
+        /*
+        double[] numbers = new double[3];
         numbers[0] = 2.2;
         numbers[1] = 3.3;
         numbers[2] = 4.4;
@@ -16,7 +17,8 @@ public class ListExample {
         double[] numbersCopy = Arrays.copyOf(numbers, 10);
 
         System.out.println("Nowa tablica");
-        System.out.println(Arrays.toString(numbersCopy));     */
+        System.out.println(Arrays.toString(numbersCopy));
+        */
 
         /*
         ArrayList<Double> list = new ArrayList<>();
@@ -53,21 +55,35 @@ public class ListExample {
 
         System.out.println(listLinked.size());
 
-        for (int i = 0; i < 100; i++) {
+    /*    for (int i = 0; i < 100; i++) {
             listLinked.add((double) i);
             arrayList.add((double) i);
         }
 
-        printList(arrayList);
+        printList(arrayList);*/
+
+
+        Integer[] ints = {5 ,10 , 15};
+        List<Integer> listInt = Arrays.asList(ints);
+        System.out.println(listInt);
+
+        //łatwiejszy sposób
+
+        List<Integer> list2 = List.of(5, 10 ,15);
+
+
     }
 
 
-
-        private static void printList (List <Double> list) {
+        // używanie polimorfizmu
+        private static void printList (List<Double> list){
             for (Double element : list) {
                 System.out.println(element);
             }
         }
+
+
+
 }
 
 
